@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img{
+    cursor: pointer;
+}
+
+nav i{
+    font-size: x-large;
+}
+
+.nav-big{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+
+}
+nav{
+    padding: 10px 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 10%;
+    background-color: white;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12%;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12%;
+}
+.nav-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.search-box{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    margin-right: 5%;
+    border-radius: 25px;
+    width: 90%;
+}
+.search-box input{
+    width: 80%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: large;
+}
+
+
+
+/* ----------------SIDEBAR------------ */
+
+
+.sidebar{
+    width: 7%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding: 7% 0 0 0;
+    /* background: #eaf; */
+    text-align: center;
+}
+
+.shortcut-link p{
+    font-size: small;
+    font-weight: 700;
+}
+.shortcut-link i {
+    font-size: large;
+    color: black;
+    padding-top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+    background: white;
+    padding-left: 8%;
+    padding-right: 2%;
+    z-index: 1;
+}
+
+.suggestion{
+    background-color: white;
+    position: sticky;
+    top: 12%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8%;
+    margin: 10px 0 0 7%;
+    width: 70%;
+}
+
+.box{
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px;
+    background-color: azure;
+}
+
+.box h3{
+    font-weight: 300;
+    font-size: medium;
+}
+
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.thumbnail{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.flex-div1{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.flex-div1 img{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info a{
+    color: black;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+@media(max-width: 900px){
+    .nav-left i{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .suggestion{
+        display: none;
+    }
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .righticon{
+        display: none;
+    }
+    .nav-left img{
+        width: 500%;
+    }
+    .search-box input{
+        display: none;
+    }
+    .search-box{
+        border: none;
+        display: inline;
+    }
+    .nav-mid{
+        display: inline;
+        margin-left: 58%;
+    }
+    .notification-icon, .user-icon{
+        padding: 5px;
+    }
+    .nav-right{
+        width: 30%;
+    }
+}
+
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vid-container{
+    width: 59%;
+    margin: 2% 0 0 2%;
+}
+
+.vid-recommend{
+    width: 32%;
+    margin: 2% 5% 0 0;
+}
+.recommend{
+    margin-top: 2%;
+}
+.vid-info1{
+    float: right;
+    width: 45%;
+    color: #5a5a5a;
+    font-size: 13px;
+    /* background-color: yellow; */
+}
+.vid-info1 a{
+    color: black;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+.thumbnail1{
+    width: 50%;
+    border-radius: 5%;
+}
+
+.vid-title{
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.channel-box-left{
+    display: flex;
+    width: 38%;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 40%;
+    height: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.channel-box-right{
+    width: 40%;
+}
